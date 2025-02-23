@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  color: red;
+}
+
+.box1 {
+  background-color: aqua;
+}
+.box1 div {
+  border: 1px solid black;
+}
+.box1 div p {
+  color: purple;
+}
+.box1 div p:hover {
+  color: green;
+}
+
+.box4, .box3 {
+  height: 100px;
+  width: 200px;
+  border: 1px solid brown;
+  background-color: purple;
+}
+
+.box5 {
+  height: 200px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: red;
+}
+
+.box6 {
+  height: 100px;
+  width: 200px;
+  border: 2px solid red;
+  background-color: aqua;
+}
+
+.box7 {
+  height: 200px;
+  width: 100px;
+  border: 1px dotted blue;
+  background-color: yellow;
+}/*# sourceMappingURL=style.css.map */

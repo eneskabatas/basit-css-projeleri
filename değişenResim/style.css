@@ -1,0 +1,59 @@
+:root{
+
+    --renk:rgb(222, 38, 38);
+    --genislik:100%;
+    --yukseklik:100vh;
+    --gizle:hidden;
+    --p-r:relative;
+    --p-a:absolute;
+    --sifir:0;
+    --sigdir:cover;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: var(--yukseklik);
+    overflow: var(--gizle);
+    position: var(--p-r);
+}
+
+.container div{
+    width: var(--genislik);
+    height: var(--genislik);
+    position: var(--p-a);
+    opacity: var(--sifir);
+    animation: show 16s infinite;
+    animation-delay: var(--x);
+}
+
+.container div img{
+    object-fit: var(--sigdir);
+    width: var(--genislik);
+    height: var(--genislik);
+}
+
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+
+    8%{
+        opacity: 1;
+    }
+
+    25%{
+        opacity: 1;
+        scale: 1.1;
+    }
+
+    40%{
+        opacity: 0;
+    }
+}

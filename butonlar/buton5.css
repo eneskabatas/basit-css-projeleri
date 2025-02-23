@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content:center;
+    align-items:center;
+    background-color: gray;
+}
+
+.btn{
+    width: 200px;
+    border: none;
+    transform: rotate(5deg);
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    box-shadow: 0 2px 2px gray;
+    transition: all 0.2s ease;
+    font-family: cursive;
+}
+
+.btn span {
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: 2px solid rgb(89, 86, 86);
+}
+
+.btn:active{
+    transform: translateY(5px);
+}

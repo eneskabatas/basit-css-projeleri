@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hand{
+    position: relative;
+    width: 80px;
+    height: 60px;
+    margin-left: 80px;
+}
+
+.hand::before{
+    content: "";
+    width: 180%;
+    height: 75%;
+    background-color: black;
+    display: block;
+    position: absolute;
+    top: 70%;
+    right: 20%;
+    border-radius: 40px 10px;
+    filter: blur(10px);
+    opacity: 0.3;
+}
+
+.bes{
+    width: 100%;
+    height: 100%;
+    background-color: tan;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 40px;
+}
+
+.alti{
+    width: 120%;
+    height: 40px;
+    background-color: tan;
+    position: absolute;
+    bottom:-18%;
+    right: 1%;
+    transform: rotate(-20deg);
+    border-radius: 30px 20px 20px 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    border-left: 2px solid rgba(0, 0, 0, 0.1)
+}
+
+.alti::after{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 20%;
+    height: 60%;
+    content: "";
+    position: absolute;
+    bottom: -1%;
+    left: 5px;
+    border-radius: 60% 10% 10% 30%;
+    border-right: 2px solid rgba(0,0,0,0.1);
+}
+
+.el{
+    background-color: tan;
+    width: 80%;
+    height: 35px;
+    position: absolute;
+    bottom: 32%;
+    right: 64%;
+    transform: rotate(10deg);
+    transform-origin: 100% 20px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.el::before{
+    content: "";
+    background-color: tan;
+    width: 140%;
+    height: 30px;
+    position: absolute;
+    bottom: 5%;
+    right: 65%;
+    border-radius: 20px;
+    transform: rotate(-60deg);
+    transform-origin: 70px;
+
+}
+
+.bir{
+    animation-name: parmak1;
+}
+
+.iki{
+    animation-name: parmak2;
+    animation-delay: 0.1s;
+    filter: brightness(80%);
+}
+
+.uc{
+    animation-name: parmak3;
+    animation-delay: 0.2s;
+    filter: brightness(90%);
+}
+.dort{
+    animation-name: parmak4;
+    animation-delay: 0.3s;
+    filter: brightness(100%);
+}
+
+@keyframes parmak1{
+    0%{
+        transform: rotate(10deg) scale(0.4);
+    }
+
+    40%{
+        transform: rotate(50deg) scale(0.4);
+    }
+
+    50%{
+        transform: rotate(10deg) scale(0.4);
+    }
+
+    100%{
+        transform: rotate(10deg) scale(0.4);
+    }
+}
+
+@keyframes parmak2{
+    0%{
+        transform: rotate(10deg) scale(0.6);
+    }
+
+    40%{
+        transform: rotate(50deg) scale(0.6);
+    }
+
+    50%{
+        transform: rotate(10deg) scale(0.6);
+    }
+    100%{
+        transform: rotate(10deg) scale(0.6);
+    }
+}
+
+@keyframes parmak3{
+    0%{
+        transform: rotate(10deg) scale(0.8);
+    }
+
+    40%{
+        transform: rotate(50deg) scale(0.8);
+    }
+
+    50%{
+        transform: rotate(10deg) scale(0.8);
+    }
+    100%{
+        transform: rotate(10deg) scale(0.8);
+    }
+}
+
+@keyframes parmak4{
+    0%{
+        transform: rotate(10deg) scale(1);
+    }
+
+    40%{
+        transform: rotate(50deg) scale(1);
+    }
+    50%{
+        transform: rotate(10deg) scale(1);
+    }
+    100%{
+        transform: rotate(10deg) scale(1);
+    }
+}

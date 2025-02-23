@@ -1,0 +1,50 @@
+@import "rest";
+$myColor:red;
+$secondColor:purple;
+.box{
+    color:$myColor;
+}
+.box1{
+    background-color: aqua;
+    div{
+        border: 1px solid black;
+
+        p{
+            color:$secondColor;
+            &:hover{
+                color: green;
+            }
+            
+        }
+    }
+}
+
+%box2{
+    height: 100px;
+    width: 200px;
+    border: 1px solid brown;
+    background-color: purple;
+}
+.box3{
+    @extend %box2;
+}
+.box4{
+    @extend %box2;
+}
+
+@mixin kutu($height,$width,$border,$bgColor){
+    height: $height;
+    width: $width;
+    border: $border;
+    background-color: $bgColor;
+}
+.box5{
+    @include kutu(200px,300px,1px solid black,red)
+
+}
+.box6{
+    @include kutu(100px,200px,2px solid red,aqua)
+}
+.box7{
+    @include kutu(200px,100px,1px dotted blue,yellow);
+}
